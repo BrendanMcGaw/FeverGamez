@@ -1,0 +1,381 @@
+/*
+File Name: style.css
+Author: Brendan McGaw
+Created: 04/08/2025
+*/
+
+/* Default total content and global page stylings. */
+html, body {
+    background-image: url("../data/images/nintendo-switch-image-background.jpg"); /* Background image for all web pages. */
+    margin: 0cm 1cm 0cm 1cm; /* left and right side margins of 1cm for main content body of all webpages. */
+    font-family: Tahoma;
+}
+
+/* Styling for unordered lists. */
+ul {
+    text-align: left;
+    padding-left: 5%;
+}
+
+/* Styling for list items */
+li {
+    padding-bottom: 10px; /* Makes the dot points look a little neater. */
+}
+
+/* Setting some default styling for the ID body content on each page. */
+#body-content-container {
+    background-color: #FDF0D5;
+    padding-bottom: 20px;
+    border-left: 0.25rem solid black;
+    border-right: 0.25rem solid black;
+    border-bottom: 0.25rem solid black;
+    padding-left: 1cm;
+    padding-right: 1cm;
+}
+
+
+/* ID for navigation bar container styles. */
+#Nav-bar-container {
+    border-left: 0.25rem solid black;
+    border-right: 0.25rem solid black;
+    border-bottom: 0.25rem solid black;
+}
+
+/* Navigation bar styles */
+#Nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    font-size: 36px;
+    background-color: #780000;
+}
+
+/* Container that holds the "FeverGamez" image */
+#store-image-container {
+    height: auto;
+    background-color: black;
+    border: 0.25rem solid black;
+}
+
+/* The banner for the store "FeverGamez" image styling. */
+.store-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    justify-self: center; /* Centered incase of weird browser hiccups causing image not to resize properly. */
+    display: block;
+}
+
+/* Container grid list class that holds all the cards in the featured products. */
+.featured-products-section-list {
+    display: grid;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: space-around;
+    grid-template-rows: 5px 860px;
+}
+
+/* The styling for each card in the featured section of the home page. */
+.featured-product-game-card {
+    border: 6px solid black;
+    padding-top: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    row-gap: 5px;
+    text-align: center;
+    align-items: center;
+    color: #003049;
+    background-color: #669BBC;
+    border-radius: 10px;
+}
+
+/* Styling for our card description area - hides overflow if description too long. */
+.featured-card-description {
+    max-height: 200px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Animation transition time and effect for anchor tags. */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Changes teh default color of the text of anchor tags. */
+a:link {
+    color:chartreuse;
+    text-decoration: none;
+}
+
+/* Changes the color of the text of anchor tags when visited. */
+a:visited {
+    color: rgb(241, 21, 150);
+}
+
+/* Animates the text to transform and increase its scale by 1.5% */
+a:hover {
+    transform: scale(1.2);
+}
+
+/* Styling displayed grid to place the contact form in the center of the body. */
+#contact-body-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+/* Styling for the form on the contact us page. */
+.email-form {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* https://www.deviantart.com/nindiespotlight/art/Nintendo-Switch-Icon-Background-766485568 for background image reference */
+/* This will stop our email address input from moving lines if we resize the message textarea. */
+.form-email-container {
+    display: block;
+}
+
+/* Styling for our textarea box in our email submission form */
+#message {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    width: 95%;
+    max-width: 95%;
+    min-width: 50%;
+    height: 200px;
+    max-height: 300px;
+    min-height: 100px;
+    border: 2px solid black;
+    text-align: left;
+    vertical-align: top;
+    text-wrap: wrap;
+}
+
+/* Styling buttons on the contact us form. */
+.form-buttons {
+    background-color: #003049;
+    color: #FDF0D5;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 0.12rem solid black;
+    width: 15%;
+    height: 5%;
+    margin-bottom: 10px;
+    box-shadow: 
+        1px 1px 2px 2px gray,
+        2px 2px 2px 2px gray;
+    transition-duration: 0.12s;
+    }
+
+/* Gives the button a "Pressed" feel when clicking. */
+.form-buttons:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+/* Styling for our footer, displayed as a grid for easy layout of content. */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #780000;
+    padding-right: 15px;
+    border-right: 0.25rem solid black;
+    border-left: 0.25rem solid black;
+    border-bottom: 0.25rem solid black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Styling for our copyright statement to be in the 4th column on the far right. */
+.footer-copyright-statement {
+    text-align: right;
+    grid-column: 4 / span 4;
+    grid-row: 1 / span 1;
+    color: white;
+}
+
+/* Makes the font-size of the text in the footer a standard 20px */
+.footer-links {
+    font-size: 20px;
+}
+
+/* Places in grid column 1. */
+.footer-grid-one {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+/* Places in grid column 2. */
+.footer-grid-two {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+/* Places in grid column 3. */
+.footer-grid-three {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+}
+
+/* Defines our grid for the about us terms section. */
+.privacy-and-terms-sections {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* Places the privacy policy section into grid column 2. */
+#privacy-policy-section {
+    grid-column: 2;
+}
+
+/* Places the t&c section into grid column 2. */
+#terms-and-conditions-section {
+    grid-column: 2;
+}
+
+/* Styling for our terms and conditions, privacy navbar. Makes it so that the navbar follows the user when they scroll down the viewport. */
+#terms-conditions-privacy-navigation {
+    position: sticky;
+    top: 0;
+    left: 50px;
+    height: 780px;
+    width: 350px;
+    background-color: #780000;;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+/* Makes the links in the about us policies change color as you mouse over their navigation bar. */
+.tc-nav-anchors:hover {
+    background-color: red;
+}
+
+/* Removes all decorations from abbr tags. */
+abbr {
+    text-decoration: none;
+}
+
+.game-genre-heading {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.genre-product-card {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: #669BBC;
+    margin-bottom: 25px;
+    max-width: 80%;
+}
+
+.genre-product-content-right {
+    grid-column: 2 / 2;
+}
+
+.product-title {
+    text-align: center;
+    grid-row: 1 / 2;
+}
+
+.product-description {
+    grid-row: 2 / 3;
+}
+
+.product-price {
+    grid-row: 5 / 6;
+}
+
+.product-searchtags {
+    grid-row: 3 / 4;
+}
+
+.product-reviews {
+    grid-row: 4 / 5;
+}
+
+/* Requires alignment and width max-content to limit the area in which the cursor is affected by the anchor tag.*/
+.product-url {
+    grid-row: 5 / 6;
+    align-self: end;
+    width: max-content;
+}
+
+/* Class to align the image to the left of the parent */
+.genre-product-image-left {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 6;
+    max-width: 300px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 36px;  
+  border: none;
+  outline: none;
+  color:chartreuse;
+  padding: 6px 25px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FDF0D5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

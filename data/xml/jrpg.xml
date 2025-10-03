@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+File Name: xmltemplate.xml
+Author: Brendan McGaw
+Created: 04/08/2025
+-->
+
+
+<!DOCTYPE Games [
+    <!ELEMENT Games (Genre+)>
+    <!ELEMENT Genre (Game+)>
+        <!ATTLIST Genre genre CDATA #REQUIRED>
+    <!ELEMENT Game (Title, Description, Price, SearchTags*, Reviews*, RelativeImagePath+, AbsoluteWebpageURL+)>
+    <!ELEMENT Title (#PCDATA)>
+    <!ELEMENT Description (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT SearchTags (#PCDATA)>
+    <!ELEMENT Reviews (#PCDATA)>
+        <!ATTLIST Reviews score (0|0.5|1|1.5|2|2.5|3|3.5|4|4.5|5) "0">
+    <!ELEMENT RelativeImagePath (#PCDATA)>
+    <!ELEMENT AbsoluteWebpageURL (#PCDATA)>
+    <!ENTITY jrpg "Japanese Role-Playing Game">
+    <!ENTITY fps "First-Person Shooter">
+    <!-- Entites for genre names -->
+]>
+
+<Games>
+    <Genre genre="&jrpg;">
+        <Game>
+            <RelativeImagePath>./data/images/final-fantasy-10-image.jpg</RelativeImagePath>
+            <Title>Final Fantasy X X-2 HD Remaster for Nintendo Switch</Title>
+            <Description>Final Fantasy X tells the story of Tidus, a star blitzball player who journeys with a young and beautiful summoner named Yuna on her quest to save the world of Spira from an endless cycle of destruction wrought by the colossal menace known as “Sin”. Final Fantasy X-2 returns to the world of Spira where High Summoner Yuna travels with her companions Rikku and Paine to unravel the mysteries of the messages hidden in the spheres she hunts, not knowing that the answers she seeks may change everything.</Description>
+            <Price>$51.07</Price>
+            <SearchTags>ff10, final fantasy, jrpg, adventure</SearchTags>
+            <Reviews score="4.5">Very solid, rated well, fun game!</Reviews>
+            <AbsoluteWebpageURL><![CDATA[https://www.amazon.com.au/Final-Fantasy-Remaster-Nintendo-Switch/dp/B07JB4ZR2Y/ref=sr_1_1?crid=392ELAMV9NWRO&dib=eyJ2IjoiMSJ9.AGHGlcRVx6RQZimQTA0hPOtwp56Bhtscu3lOfKZwVjj4JfzWje7pqYUjMnXtrbEi60mEFwJW6avt770lz5xs0hG_K5NNnn5w_TObuO3Q8vOQJ4HRQpiEN6IKOaYHxrHOnzHahGPUgnimK1UY8NxFfCs8q6Yrz0ux_A6wWbtJV9JJyHa3OrfBlekIdNU4zAzY4fCV1s5gOGyzLuFiLrCWUjzERi9lVAGvyhnKPdCDRJk0X9CqMMsG2hKA-aHHDpJIJFHsdLWYl4gQZzAyOE_dEI5_xaAAQcuI4F0JtJq_1us.jFuJFrMh1-OkjF2ISDx8BZllGGOufPPIUCgTmepyt9M&dib_tag=se&keywords=Final%2BFantasy%2BX%2B%7C%2BX-2%2BHD%2BRemaster&qid=1756359618&sprefix=final%2Bfantasy%2Bx%2Bx-2%2Bhd%2Bremaster%2Caps%2C319&sr=8-1&th=1]]></AbsoluteWebpageURL>
+        </Game>
+        <Game>
+            <RelativeImagePath>./data/images/final-fantasy-7-image.jpg</RelativeImagePath>
+            <Title>Final Fantasy VII and Final Fantasy VIII Remastered</Title>
+            <Description>Final Fantasy VII, the timeless classic loved by a legion of fans, is now available with a number of helpful extra features! Experience an epic adventure beyond imagination, culminating in the final battle to decide the fate of the planet. The world has fallen under the dominion of the Shinra Electric Power Company, a sinister corporation that has monopolized the planet’s very life force as Mako energy. In the urban megalopolis of Midgar, an anti-Shinra rebel group calling themselves Avalanche have stepped up their campaign of resistance. Cloud Strife, a former member of Shinra’s elite SOLDIER unit now turned mercenary, lends his aid to the rebels, unaware that he will be drawn into an epic battle for the fate of the planet while having to come to terms with his own lost past. The following extra features are included: 3x speed mode, Ability to turn battle encounters off, Battle enhancement mode. Final Fantasy VIII Remastered. It is a time of war. The Republic of Galbadia, under the influence of the sorceress Edea, mobilizes its great armies against the other nations of the world. Squall and other members of SeeD, an elite mercenary force, join hands with Rinoa, a resistance fighter, to fight against Galbadia’s tyrannical rule and to prevent Edea from fulfilling her ultimate goal.</Description>
+            <Price>$54.95</Price>
+            <SearchTags>ff7, ff8, jrpg, final fantasy, adventure</SearchTags>
+            <Reviews score="5">Best there ever was!</Reviews>
+            <AbsoluteWebpageURL><![CDATA[https://www.amazon.com.au/Square-Nintendo-Switch-Fantasy-Remastered/dp/B08LB3XQ64/ref=sr_1_3?crid=3LKFZCKJTPVER&dib=eyJ2IjoiMSJ9.Elrspp2x8wUio4SY01KjSVKctKkHD-jPNmJqIIsL9DS9kBKJ1LagPY9TY639z7XUuKK-ImMMjK6Co5gYH--9yvkmVfq3Rqq3X37Nu3gMmTVXSovgbchQWkOk1InHnLUmd4Rl4K5vw2Kxi-VO0g30yrcbt8AmoPXCUoamXGTLIFOAddNOEXs0IxINKUXgqC9zLLXQZRI58cbZ0O8FCKhqnZPwmT5jYs3obdaow-eiaJ8YXbQqADhe6P8uEG2IxRK2.N9syIpDadckpNmc30lL1GQk23l8STBe1F5IWG9nIKNg&dib_tag=se&keywords=Final+fantasy+7+and+8+remastered+twin+pack&qid=1756357157&sprefix=final+fantasy+7+and+8+remasteredtwin+pack%2Caps%2C206&sr=8-3]]></AbsoluteWebpageURL>
+        </Game>
+        <Game>
+            <RelativeImagePath>./data/images/final-fantasy-9-image.jpg</RelativeImagePath>
+            <Title>Final Fantasy 9</Title>
+            <Description>Zidane and the Tantalus Theater Troupe have kidnapped Princess Garnet, the heir of Alexandria. To their surprise, however, the princess herself yearned to escape the castle. Through a series of unusual circumstances, she and her personal guard, Steiner, fall in with Zidane and set out on an incredible journey. Meeting unforgettable characters like Vivi and Quina along the way, they learn about themselves, the secrets of the Crystal and a malevolent force that threatens to destroy their world.</Description>
+            <Price>$80.10</Price>
+            <SearchTags>ff9, final fantasy, jrpg, adventure</SearchTags>
+            <Reviews score="4.5">Great game, very fun, muchoe chocobo for monies.</Reviews>
+            <RelativeImagePath>./data/images/final-fantasy-9-image.jpg</RelativeImagePath>
+            <AbsoluteWebpageURL><![CDATA[https://www.amazon.com.au/Final-Fantasy-IX-%E8%BC%B8%E5%85%A5%E7%89%88-Switch/dp/B08LF3GCJ7/ref=sr_1_1?crid=3EAIZBRF64MCK&dib=eyJ2IjoiMSJ9.PcGmVcNiw1YZZbP5xtzaNFUUr9lgqvhdbYU7OnHisKRVCE3etiDGFQwt32oaHLErvI-CG_A4S8UFFwNj-zm6j53zXTwR_WCggm6G1BuEPO4ma0g_Xpd1xonjR43CyN_4Fzr5VNVzUewMyTxxBjwLLA.NJ9HOOR_dTEU9v6KnDoo4CgsrvhHmqYRJei7U0YeY8I&dib_tag=se&keywords=Final+Fantasy+IX+switch&qid=1756357842&sprefix=final+fantasy+ix+switc%2Caps%2C229&sr=8-1]]></AbsoluteWebpageURL>
+        </Game>
+    </Genre>
+</Games>

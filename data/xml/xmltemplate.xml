@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+File Name: xmltemplate.xml
+Author: Brendan McGaw
+Created: 04/08/2025
+-->
+
+
+<!DOCTYPE Games [
+    <!ELEMENT Games (Genre+)> 
+    <!ELEMENT Genre (Game+)>
+        <!ATTLIST Genre genre CDATA #REQUIRED>
+    <!ELEMENT Game (Title, Description, Price, SearchTags*, Reviews*, RelativeImagePath+, AbsoluteWebpageURL+)>
+    <!ELEMENT Title (#PCDATA)> <!-- name of game tag -->
+    <!ELEMENT Description (#PCDATA)> <!-- description of game tag -->
+    <!ELEMENT Price (#PCDATA)> <!-- price of game tag -->
+    <!ELEMENT SearchTags (#PCDATA)> <!-- search tags of game tag -->
+    <!ELEMENT Reviews (#PCDATA)> <!-- reviews of game tag -->
+        <!ATTLIST Reviews score (0|0.5|1|1.5|2|2.5|3|3.5|4|4.5|5) "0"> <!-- reviews allowed enumarated values. -->
+    <!ELEMENT RelativeImagePath (#PCDATA)> <!-- relative image path of game tag -->
+    <!ELEMENT AbsoluteWebpageURL (#PCDATA)> <!-- absolute web page url of game tag -->
+    <!ENTITY jrpg "Japanese Role-Playing Game"> <!-- entity for genre defintion-->
+    <!ENTITY fps "First-Person Shooter"> <!-- entity for genre defintion-->
+]>
+
+<Games>
+    <Genre genre="&fps;">
+        <Game>
+            <Title></Title>
+            <Description></Description>
+            <Price></Price>
+            <SearchTags></SearchTags>
+            <Reviews score="0"></Reviews>
+            <RelativeImagePath></RelativeImagePath>
+            <AbsoluteWebpageURL></AbsoluteWebpageURL>
+        </Game>
+    </Genre>
+</Games>
