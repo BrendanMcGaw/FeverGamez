@@ -1,3 +1,5 @@
+This project aims to develop my PHP skills, combined with HTML, CSS and JavaScript with a focus on responsive design to allow for greater accessibility based on device type and size.
+
 Brendan McGaw
 c3283816
 
