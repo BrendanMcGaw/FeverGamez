@@ -11,6 +11,13 @@ html, body {
     font-family: Tahoma;
 }
 
+/* When window width is 600px or less, remove margin. */
+/* @media (max-width: 600px) { 
+    html, body {
+        margin: 0px;
+    }
+} */
+
 /* Styling for unordered lists. */
 ul {
     text-align: left;
@@ -115,7 +122,7 @@ a:link {
 
 /* Changes the color of the text of anchor tags when visited. */
 a:visited {
-    color: rgb(241, 21, 150);
+    color: yellow;
 }
 
 /* Animates the text to transform and increase its scale by 1.5% */
@@ -171,7 +178,6 @@ a:hover {
     border-radius: 8px;
     font-size: 16px;
     border: 0.12rem solid black;
-    width: 15%;
     height: 5%;
     margin-bottom: 10px;
     box-shadow: 
@@ -378,4 +384,72 @@ abbr {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Very good way of checking if device is mobile or desktop. Since mobiles don't generally hover. */
+/* Media adjustment for mobile or tablet devices.*/
+@media (hover: none) {
+    html, body {
+        margin: 0px;
+    }
+    
+    #terms-conditions-privacy-navigation {
+        display: none;
+    }
+    
+    .email-form {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .form-buttons {
+        font-size: 12px;
+    }
+
+    #privacy-policy-section {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #terms-and-conditions-section {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .featured-products-section-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    #Nav-bar {
+        font-size: 18px; 
+    }
+
+    .dropdown .dropbtn {
+        font-size: 18px;
+    }
+
+    /* TODO::: Add javascript for description length to be changed to elipses for further descriptions if on mobile device. */
+    .genre-product-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        font-size: auto;
+    }
+
+    .footer-links {
+        font-size: auto;
+    }
+
+    address {
+        font-size: 8px;
+    }
+
+    footer {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
 }

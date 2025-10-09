@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?php echo $title; ?></title>
         <link rel="stylesheet" type="text/css" href="<?php echo $themefolder ?>/style.css">
     </head>
@@ -50,4 +50,21 @@
              * Use include or require if you specifically need the file to be processed multiple times (e.g., for dynamically generated content)
              */
         ?>
+        <script type="text/javascript"> // Runs whenever the page is generated.
+
+            // Sets the latest cookie of genre page visited with a date and time.
+            function setCookieGenreTimeDate() {
+                const date = new Date();
+                date.setTime(date.getTime());
+                const parameterStringFind = window.location.search; // Finds the query parameter within the window we've oepned.
+                const genreParameter = new URLSearchParams(parameterStringFind); // Creates instance of an interface that provides utility methods to work with query strings of a URL.
+                const genre = genreParameter.get('genre'); // gets the parameter of genre="whateverQueryPageWe'reOn"
+                console.log(genre);
+                document.cookie = genreParameter;
+                document.cookie = "timeLastAccessed=" + date;
+            }
+
+            // Runs function whenever genre page is generated.
+            setCookieGenreTimeDate();
+        </script>
     </body>

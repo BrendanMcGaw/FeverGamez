@@ -1,5 +1,5 @@
 <?php 
-    $title = 'Fever Gamez - Newcastle Video Games!';
+    $title = 'Contact Us';
     $datafolder = 'data';
     $themefolder = 'themes';
     $content = '
@@ -13,7 +13,7 @@
                 <!-- Hyperlinks with relative URLS-->
                 <a href="index.php">Home</a> 
             <div class="dropdown">
-                <button class="dropbtn">Game Genres
+                <button class="dropbtn">Games
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
@@ -67,7 +67,7 @@
                     <!-- Submit button for form -->
                     <button class="form-buttons" type="submit">Submit</button>
                     <!-- Clear content of form button.-->
-                    <button class="form-buttons" type="reset">Clear Form</button>
+                    <button class="form-buttons" type="reset">Clear</button>
                     <!-- <button type="submit"></button> -->
                 </form>
             </div>

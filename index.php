@@ -1,5 +1,5 @@
 <?php 
-    $title = 'Fever Gamez - Newcastle Video Games!';
+    $title = 'Fever Gamez - Homepage';
     $datafolder = 'data';
     $themefolder = 'themes';
     $content = '
@@ -11,9 +11,9 @@
         <nav id="Nav-bar"> <!-- Navigation bar -->
             <!-- Hyperlinks with relative URLS-->
             <a href="index.php">Home</a> 
-            <!-- <a href="genre.php">Game Genre</a> -->
+            <!-- <a href="genre.php">Games</a> -->
             <div class="dropdown">
-                <button class="dropbtn">Game Genres
+                <button class="dropbtn">Games
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
@@ -128,5 +128,25 @@
     </footer>
     ';
 ?>
+<!-- TODO:: Move this to run during the opening on the Index.php page, this should not be running here as it will be invalidated during the validation test. -->
+<script type="text/javascript">
+    // Reminds user what their last visited product genre and the time, if they haven't visited. Do nothing.
+    function getCookies() {
+        if (document.cookie != null) {
+            let allCookies = document.cookie; // 
+            let splitCookies = allCookies.split(';') // Splits all cookies into their own elements withinm the splitCookies array
+            let partsOfGenre = splitCookies[0].split("="); // Splits the name-value pair into 2 separate elements for genre
+            let partsOfTimeDate = splitCookies[1].split("="); // Splits the name-value pair into 2 separate elements for time/date
+            // console.log(splitCookies[0]);
+            // console.log(splitCookies[1]);
+            // console.log(partsOfGenre);
+            // console.log(partsOfTimeDate);
+            alert("The last product genre you were browsing was: " + partsOfGenre[1] + "\n" + partsOfTimeDate[1]);
+        }  
+        return;
+    }
+    getCookies();
+
+</script>
 
 <?php include($themefolder . '/template.php'); ?>
