@@ -26,30 +26,31 @@ Created: 04/08/2025
 <Games>
     <Genre genre="&fps;">
         <Game>
+            <RelativeImagePath>./data/images/crysis-remastered-image.jpg</RelativeImagePath>
             <Title>Crysis Remastered Nintendo Switch</Title>
             <Description>What begins as a simple rescue mission becomes the battleground of a new war as alien invaders swarm over a North Korean island chain. Armed with a powerful Nanosuit, players can become invisible to stalk enemy patrols, or boost strength to lay waste to vehicles. The Nanosuit’s speed, strength, armor, and cloaking allow creative solutions for every kind of fight, while a huge arsenal of modular weaponry provides unprecedented control over play style. In the ever-changing environment, adapt tactics and gear to dominate your enemies, in an enormous sandbox world. The classic first person shooter from Crytek is back with the action-packed gameplay, sandbox world, and thrilling epic battles you loved the first time around.</Description>
             <Price>$48.29</Price>
             <SearchTags>crysis, fps, shooter, ea, electronic arts</SearchTags>
             <Reviews score="4">Game okay, not the trilogy, only the first part.</Reviews>
-            <RelativeImagePath>./data/images/crysis-remastered-image.jpg</RelativeImagePath>
             <AbsoluteWebpageURL><![CDATA[https://www.amazon.com.au/Solutions-To-Go-CRYA02-UK-45ST-Remastered/dp/B09FV2VTWW/ref=sr_1_4?crid=1F7EGJ190TENW&dib=eyJ2IjoiMSJ9.XlBO7EzkOu3ou06WDKx-b6-Wc1HT59E8ftZ0-rQ_BT2TSym1LT99q6dUGYHhyfFjFz2A6Qzv5bLuCpqPcd8Xnujktl0Q7EnK5fXJGxYUhhXIKLq3sgMOJrJxpx8MBjU_0jU6cerNddcL-prZo4ZXJmxZhJNMmCVbdcCinkwbau4KinU_AC9ISH3DH8GjYt8NgQ8Gif5Ufe1S0Ys7B2dmSieaht4vmfEtCmUl-C_3OKXY_ceO_zcnQfT_iJpq94xHi0TDX28S5B-ERgTTJnsxq0bDBCj2tf5bYRNsz0GByMY.bBc497nxY86gussoh7-yybCxLiBVRfuw1x4mEPXiNSs&dib_tag=se&keywords=nintendo%2Bswitch%2Bgames%2Bfps&qid=1756360057&sprefix=nintendo%2Bswitch%2Bgames%2Bfps%2Caps%2C256&sr=8-4&th=1]]></AbsoluteWebpageURL>
         </Game>
         <Game>
+            <RelativeImagePath>./data/images/metro-redux-image.jpg</RelativeImagePath>
             <Title>Metro Redux for Nintendo Switch</Title>
             <Description>Metro Redux is the ultimate two-game collection including the definitive versions of both Metro 2033 and Metro: last light. Metro Redux will immerse players into one of the most atmospheric worlds in gaming fully brought to life on the Nintendo Switch. Metro Redux contains all of Metro: last light's single player DLC offering a further 10 hours of bonus content beyond the base game. Players can experience life in the Moscow Metro through two unique play styles - Use the “survival” play style to approach the campaign as a slow burn survival horror. Or tackle it with the combat skills of a ranger with the “spartan” play style.</Description>
             <Price>$59.95</Price>
             <SearchTags>metro redux, metro, fps, shooter, deep silver</SearchTags>
             <Reviews score="4.5">Amazing game, two for one. How could you go wrong!?</Reviews>
-            <RelativeImagePath>./data/images/metro-redux-image.jpg</RelativeImagePath>
+
             <AbsoluteWebpageURL><![CDATA[https://www.amazon.com.au/Metro-Redux-for-Nintendo-Switch/dp/B0846FLHLS/ref=sr_1_5?crid=1F7EGJ190TENW&dib=eyJ2IjoiMSJ9.XlBO7EzkOu3ou06WDKx-b6-Wc1HT59E8ftZ0-rQ_BT2TSym1LT99q6dUGYHhyfFjFz2A6Qzv5bLuCpqPcd8Xnujktl0Q7EnK5fXJGxYUhhXIKLq3sgMOJrJxpx8MBjU_0jU6cerNddcL-prZo4ZXJmxZhJNMmCVbdcCinkwbau4KinU_AC9ISH3DH8GjYt8NgQ8Gif5Ufe1S0Ys7B2dmSieaht4vmfEtCmUl-C_3OKXY_ceO_zcnQfT_iJpq94xHi0TDX28S5B-ERgTTJnsxq0bDBCj2tf5bYRNsz0GByMY.bBc497nxY86gussoh7-yybCxLiBVRfuw1x4mEPXiNSs&dib_tag=se&keywords=nintendo%2Bswitch%2Bgames%2Bfps&qid=1756360057&sprefix=nintendo%2Bswitch%2Bgames%2Bfps%2Caps%2C256&sr=8-5&th=1]]></AbsoluteWebpageURL>
         </Game>
         <Game>
+            <RelativeImagePath>./data/images/sniper-elite-3-image.jpg</RelativeImagePath>
             <Title>Sniper Elite 3 Ultimate Edition for Nintendo Switch</Title>
             <Description>Sniper Elite 3 is about a mans journey into a shooty place as a sniper. Go figure. Distance, gravity, wind and your heart rate, imagine Mortal Kombat but with guns and slow moe and far away. Okay, so maybe not Mortal Kombat. Just play it and you'll see.</Description>
             <Price>$59.95</Price>
             <SearchTags>sniper elite, sniper elite 3, fps, shooter</SearchTags>
             <Reviews score="4.5">Games super sick! woah much cool! Can't believe I'm playing a shooter on the switch!</Reviews>
-            <RelativeImagePath>./data/images/sniper-elite-3-image.jpg</RelativeImagePath>
             <AbsoluteWebpageURL><![CDATA[https://www.amazon.com.au/Sniper-Elite-Ultimate-Nintendo-Switch/dp/B07QBDNKJS/ref=sr_1_12?crid=1F7EGJ190TENW&dib=eyJ2IjoiMSJ9.XlBO7EzkOu3ou06WDKx-b6-Wc1HT59E8ftZ0-rQ_BT2TSym1LT99q6dUGYHhyfFjFz2A6Qzv5bLuCpqPcd8Xnujktl0Q7EnK5fXJGxYUhhXIKLq3sgMOJrJxpx8MBjU_0jU6cerNddcL-prZo4ZXJmxZhJNMmCVbdcCinkwbau4KinU_AC9ISH3DH8GjYt8NgQ8Gif5Ufe1S0Ys7B2dmSieaht4vmfEtCmUl-C_3OKXY_ceO_zcnQfT_iJpq94xHi0TDX28S5B-ERgTTJnsxq0bDBCj2tf5bYRNsz0GByMY.bBc497nxY86gussoh7-yybCxLiBVRfuw1x4mEPXiNSs&dib_tag=se&keywords=nintendo%2Bswitch%2Bgames%2Bfps&qid=1756360057&sprefix=nintendo%2Bswitch%2Bgames%2Bfps%2Caps%2C256&sr=8-12&th=1]]></AbsoluteWebpageURL>
         </Game>
     </Genre>
